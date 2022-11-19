@@ -12,3 +12,4 @@ __pycache__
 *.png
 *.svg
 *.ico
+.DS_Store
