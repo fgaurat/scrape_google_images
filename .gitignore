@@ -1,0 +1,14 @@
+images
+.venv
+*.pyc
+*.pyo
+*.pyd
+__pycache__
+*.so
+*.dylib
+*.jpg
+*.jpeg
+*.gif
+*.png
+*.svg
+*.ico
