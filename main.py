@@ -30,11 +30,8 @@ def run(playwright: Playwright,keyword="") -> None:
     page.get_by_role("combobox", name="Rech.").fill(keyword)
     page.get_by_role("combobox", name="Rech.").press("Enter")
     page.locator("#hdtb-msb").get_by_role("link", name="Images").click()
-    print( page.url)
-    page.wait_for_timeout(2000)
-    print("end wait_for_timeout")
     page.wait_for_selector(".isv-r")
-    print("end wait_for_selector")
+    page.wait_for_timeout(2000)
     elements = page.query_selector_all(".isv-r")
 
     for i_elem,element in enumerate(elements):
